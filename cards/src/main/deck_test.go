@@ -23,6 +23,10 @@ func TestNewDeck(t *testing.T) {
 	msg = testReadFile(t)
 	msgs = append(msgs, "when want to read a deck from a file"+msg)
 
+	printTestsMessages(msgs)
+}
+
+func printTestsMessages(msgs []string) {
 	for _, m := range msgs {
 		fmt.Println(m)
 	}
