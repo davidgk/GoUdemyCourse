@@ -13,7 +13,7 @@ import (
 
 type deck []string
 
-func newDeck() deck {
+func NewDeck() deck {
 	cards := deck{}
 	cardsSuites := deck{"Spades", "Hearts", "Diamonds", "Clubs"}
 	cardsValues := deck{"Ace", "Two", "Three", "Four", "Five", "Six", "Seven", "Eight", "Nine", "Ten", "Jack", "Queen", "King"}
