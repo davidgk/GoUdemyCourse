@@ -20,7 +20,7 @@ func TestOddAndEven(t *testing.T) {
 }
 
 func testGetEven(t *testing.T) string {
-	sut := startOddAndEven()
+	sut := StartOddAndEven()
 	msg := " should obtain an slice with 1,3,5,7,9"
 	res := sut.getEven()
 	expected := []int{1, 3, 5, 7, 9}
@@ -43,7 +43,7 @@ func evaluateTest(t *testing.T, res oddAndEven, expected []int, msg string) stri
 }
 
 func testGetOdds(t *testing.T) string {
-	sut := startOddAndEven()
+	sut := StartOddAndEven()
 	msg := " should obtain an slice with 0,2,4,6,8"
 	res := sut.getOdds()
 	expected := []int{0, 2, 4, 6, 8}
@@ -53,7 +53,7 @@ func testGetOdds(t *testing.T) string {
 
 func testInitializeArray(t *testing.T) string {
 	msg := " should be initialized with 10 elements"
-	res := startOddAndEven()
+	res := StartOddAndEven()
 	if len(res) != 10 {
 		t.Errorf("error: expected 10 elements and got %v", len(res))
 		msg = " and FAIL"
